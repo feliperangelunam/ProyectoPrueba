@@ -89,7 +89,7 @@ router.route("/imagenes")
 	})
 	.post(function(req, res){
 		//console.log("ID Usuario: "+res.locals.user._id);
-		console.log("Archivo INFO: "+req.files.archivo.path);
+		console.log("Ruta de Archivo INFO: "+req.files.archivo.path);
 		var extension = req.files.archivo.name.split('.').pop();
 		var data = {
 			title: req.body.title,
