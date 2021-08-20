@@ -110,7 +110,7 @@ router.route("/imagenes")
 						console.log(err);
 				});
 				res.redirect("/app/imagenes/"+imagen._id);
-				//console.log(imagen);
+				console.log("Router APP Imagen: "+imagen);
 			} else {
 				res.render(err);
 			}
