@@ -6,5 +6,5 @@ block contenido
 			h2= imagen.title
 			img(src="/public/imagenes/#{imagen._id}.#{imagen.extension}", class="main-img")
 			if(typeof imagen.creator != "undefined") 
-				p Por #{imagen.creator.email}
+				p Autor #{imagen.creator.email}
 	script(src="/public/js/client.js")
